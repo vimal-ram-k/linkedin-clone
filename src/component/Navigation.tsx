@@ -4,7 +4,7 @@ import LinkCompoent from "./LinkCompoent";
 
 function Navigation() {
   return (
-    <div className=" nav">
+    <div className=" nav-fill">
       <div className=" nav-item d-flex justify-content-between align-items-center">
         <LinkCompoent path="/">
           <img

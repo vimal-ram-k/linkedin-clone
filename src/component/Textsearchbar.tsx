@@ -19,7 +19,7 @@ function Textsearchbar() {
   return (
     <div
       id="textinput"
-      className=" textinput d-flex btn column-gap-2 bg-body-secondary  py-1 px-2"
+      className="  d-flex btn column-gap-2 bg-body-secondary  py-1 px-2"
     >
       <i className="bi bi-search"></i>
       <input

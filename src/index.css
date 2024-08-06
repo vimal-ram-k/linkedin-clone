@@ -1,3 +1,7 @@
+:root {
+  --bg-primary-dark: #000000cb;
+}
+
 * {
   padding: 0;
   margin: 0%;
@@ -20,6 +24,24 @@ i {
   outline: 1px solid blue;
 }
 
-.textinput {
+#textinput {
   width: 70dvw;
+  max-width: 90dvw;
+  min-width: 60dvw;
+}
+
+.dark {
+  background: var(--bg-primary-dark);
+  color: white;
+}
+
+.dark i,
+.dark h1 {
+  color: white;
+}
+
+.dark #searchbar,
+.dark #textinput {
+  background-color: var(--bg-primary-dark) !important;
+  color: white;
 }
