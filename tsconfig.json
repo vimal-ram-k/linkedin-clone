@@ -1,7 +1,9 @@
 {
   "files": [],
   "compilerOptions": {
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["vitest/globals", "@testing-library/jest-dom"],
+    "lib": ["ESNext", "DOM"]
   },
   "references": [
     {

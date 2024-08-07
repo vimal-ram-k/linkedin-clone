@@ -16,6 +16,10 @@ const Router = createBrowserRouter([
         path: "/",
         element: <Navigation />,
       },
+      {
+        path: "/chats",
+        element: <div>Chat page</div>,
+      },
     ],
   },
 ]);
