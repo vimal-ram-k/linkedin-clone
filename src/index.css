@@ -45,3 +45,10 @@ i {
   background-color: var(--bg-primary-dark) !important;
   color: white;
 }
+
+.error input {
+  outline: 1px solid red;
+  outline-offset: 4px;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
