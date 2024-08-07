@@ -3,7 +3,11 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "types": ["vitest/globals", "@testing-library/jest-dom"],
-    "lib": ["ESNext", "DOM"]
+    "lib": ["ESNext", "DOM"],
+    "baseUrl": "/",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "references": [
     {
