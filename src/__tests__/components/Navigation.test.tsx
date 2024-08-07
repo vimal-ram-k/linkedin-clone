@@ -1,19 +1,6 @@
 // src/__tests__/components/Navigation.test.tsx
-import {
-  act,
-  fireEvent,
-  render,
-  screen,
-  waitFor,
-} from "@testing-library/react";
-import {
-  afterAll,
-  beforeAll,
-  beforeEach,
-  describe,
-  expect,
-  test,
-} from "vitest";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { describe, expect, test } from "vitest";
 import Navigation from "../../component/Navigation";
 
 import "@testing-library/jest-dom";
