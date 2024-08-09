@@ -11,8 +11,7 @@ COPY ../package*.json ./
 RUN npm install
 
 # 5. Copy the rest of the application code
-COPY . .
-
+COPY ../ ./
 # 6. Build the Vite app
 RUN npm run build
 
