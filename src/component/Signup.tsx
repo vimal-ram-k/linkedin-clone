@@ -46,7 +46,6 @@ function Signup() {
         ref={userRefEmail}
         placeholder="Enter email or phone"
         onBlur={isEmailAccount}
-        value={userAccount.username}
       />
       {error && (
         <h1 role="alert" className=" alert bg-danger popover-arrow">
@@ -59,9 +58,9 @@ function Signup() {
         id="password"
         className=" px-3 py-2 w-75"
         placeholder="Password"
-        value={userAccount.password}
         ref={userRefPassword}
       />
+      <h1>{userAccount.username}</h1>
     </form>
   );
 }
