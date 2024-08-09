@@ -1,5 +1,15 @@
 // src/__tests__/components/Navigation.test.tsx
+<<<<<<< HEAD
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+=======
+import {
+  act,
+  fireEvent,
+  render,
+  screen,
+  waitFor,
+} from "@testing-library/react";
+>>>>>>> testing
 import { describe, expect, test } from "vitest";
 import Navigation from "../../component/Navigation";
 
