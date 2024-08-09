@@ -39,16 +39,18 @@ function Signup() {
     >
       <h1 className=" py-2 text-center">SignIn</h1>
       <input
-        type="text"
         name="username"
         id="username"
+        data-testid="username"
         className=" px-3 py-2 w-75"
         ref={userRefEmail}
         placeholder="Enter email or phone"
-        onMouseLeave={isEmailAccount}
+        onBlur={isEmailAccount}
       />
       {error && (
-        <h1 className=" alert bg-danger popover-arrow">Check Your Account</h1>
+        <h1 role="alert" className=" alert bg-danger popover-arrow">
+          Check Your Account
+        </h1>
       )}
       <input
         type="password"
