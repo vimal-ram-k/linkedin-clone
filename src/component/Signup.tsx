@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 function Signup() {
   const userRefEmail = useRef<HTMLInputElement>(null);
@@ -46,6 +46,7 @@ function Signup() {
         ref={userRefEmail}
         placeholder="Enter email or phone"
         onBlur={isEmailAccount}
+        value={userAccount.username}
       />
       {error && (
         <h1 role="alert" className=" alert bg-danger popover-arrow">
@@ -58,6 +59,7 @@ function Signup() {
         id="password"
         className=" px-3 py-2 w-75"
         placeholder="Password"
+        value={userAccount.password}
         ref={userRefPassword}
       />
     </form>
