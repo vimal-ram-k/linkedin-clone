@@ -45,6 +45,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: Dockerconf
+          context: .
+          file: Dockerconf/Dockerfile
           push: true
           tags: vimal1605/linkedin-clone:latest
