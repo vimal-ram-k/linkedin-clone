@@ -60,6 +60,7 @@ function Signup() {
         placeholder="Password"
         ref={userRefPassword}
       />
+      <h1>{userAccount.username}</h1>
     </form>
   );
 }
