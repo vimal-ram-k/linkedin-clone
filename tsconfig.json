@@ -1,8 +1,10 @@
 {
   "files": [],
+  "include": ["cypress", "src"],
   "compilerOptions": {
+    "module": "ESNext",
     "jsx": "react-jsx",
-    "types": ["vitest/globals", "@testing-library/jest-dom"],
+    "types": ["vitest/globals", "@testing-library/jest-dom", "cypress"],
     "lib": ["ESNext", "DOM"]
   },
   "references": [

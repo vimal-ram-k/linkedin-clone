@@ -20,7 +20,7 @@ function Signup() {
         ...prev,
         username: email,
       }));
-      const isEmail = /\w\S*.[[:com]+$/gm.test(email);
+      const isEmail = /\w\S*.\.com$/gm.test(email);
       if (!isEmail) {
         setError(true);
         form?.classList.add("error");
@@ -41,8 +41,9 @@ function Signup() {
       <input
         name="username"
         id="username"
+        type="email"
         data-testid="username"
-        className=" px-3 py-2 w-75"
+        className=" px-3 py-2 w-75 d-sm-none d-md-block"
         ref={userRefEmail}
         placeholder="Enter email or phone"
         onBlur={isEmailAccount}
